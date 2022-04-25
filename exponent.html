@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input id="num1" type="number" placeholder="Enter First Number">
+    <input id="num2" type="number" placeholder="Enter Second Number">
+    <hr>
+    <button id="button1">Click here to Find Product</button>
+    <button id="button2">Click here to find the exponent!</button>
+    <p>Exponents Here</p>
+</body>
+</html>
+<script>
+    document.querySelector("#button1").addEventListener("click", bFunction)
+    function bFunction ()
+    {
+        var a=document.getElementById("num1").value
+        var b=document.getElementById("num2").value
+        alert(a*b)
+    }
+    document.querySelector("#button2").addEventListener("click", aFunction)
+    function aFunction()
+    {
+        var a=document.getElementById("num1").value
+        var b=document.getElementById("num2").value
+        var c=a**b;
+        document.querySelector("p").innerText = c
+    }
+</script>

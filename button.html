@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #con{
+            width: 90%;
+            height: auto;
+            margin: auto;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(9,1fr);
+            grid-template-rows: repeat(1,50px);
+            gap: 10px;
+        }
+        #con>div{
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #con>div:nth-child(1){
+            background-color: skyblue;
+        }
+        #con>div:nth-child(2){
+            background-color: gray;
+        }
+        #con>div:nth-child(3){
+            background-color: green;
+        }
+        #con>div:nth-child(4){
+            background-color: red
+        }
+        #con>div:nth-child(5){
+            background-color: yellow
+        }
+        #con>div:nth-child(6){
+            background-color: skyblue;
+        }
+        #con>div:nth-child(7){
+            background-color: blue
+        }
+        #con>div:nth-child(8){
+            background-color: black
+        }
+        #con>div:nth-child(9){
+color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="con">
+        <div>Primary</div>
+        <div>Secondary</div>
+        <div>Success</div>
+        <div>Danger</div>
+        <div>Warning</div>
+        <div>Info</div>
+        <div>Light</div>
+        <div>Dark</div>
+        <div>Link</div>
+    </div>
+</body>
+</html>
